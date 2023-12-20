@@ -1,10 +1,16 @@
 #card_img{
     margin-top: 30px;
 }
+#card_img .card_one{
+    background-color: rgb(255, 255, 255);
+}
 #card_img .card_one .titre{
     color:var(--btn_blue);
     font-weight: 600;
-    margin-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left:  20px;
+
 }
 #card_img .card{
     display: grid;
@@ -16,6 +22,7 @@
     justify-content: start;
     gap: 10px;
     align-items: center;
+    padding:  0 20px;
     
 }
 #card_img .card_container_one .card_one .icone_img{
@@ -71,8 +78,21 @@
 #card_img .card_container_four  .card_one  .right_detail{
     display: flex;
     justify-content: right;
+
    
 }
+
+#card_img  .card_one  .right_detail  .lien_detail{
+    display: flex;
+    text-decoration: none;
+
+
+}
+#card_img   .card_one  .right_detail  .lien_detail span{
+    color: var(--red);
+    margin-left: 8px;
+}
+
 
 /* #card_img .card_container_two .card_one .card_description{
     display: flex;

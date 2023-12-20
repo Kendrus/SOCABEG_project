@@ -1,9 +1,9 @@
 #footer_one{
-    
+    background-color:var( --blue-four); 
 }
 #footer_one  .card_footer{
     margin-top: 40px;
-    background-color:var( --blue-four);
+ 
     padding-top: 40px;
     display: flex;
     justify-content: space-around;
@@ -13,7 +13,7 @@
     
 }
 #footer_one .col_one{
-grid-column:2/  span 3;
+grid-column:1/  span 3;
 }
 #footer_one .col_two{
     grid-column-end: span 3;
@@ -24,14 +24,16 @@ grid-column:2/  span 3;
 
 }
 #footer_one .col_four{
-    grid-column-end:10/ span 4;
+    /* grid-column-end:10/ span 4; */
+    grid-column-end: span 3;
+
 
 }
 
 #footer_one .col_one .logo{
     display: flex;
     justify-content: start;
-    margin-top: 15px;
+    margin-top: 12px;
 }
 #footer_one .col_one .logo .img_logo{
    width: 120px; 
@@ -39,7 +41,7 @@ grid-column:2/  span 3;
 #footer_one .col_one .tel{
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 5px;
 
 }
 #footer_one .col_one .tel .tc{
@@ -48,7 +50,7 @@ grid-column:2/  span 3;
 #footer_one .col_one .message{
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 5px;
     
 }
 #footer_one .col_one .message .tc{
@@ -58,18 +60,18 @@ grid-column:2/  span 3;
 #footer_one .col_one .mail{
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 #footer_one .col_one .mail .tc{
     text-decoration: none;
     color:var(--text-color-2);
-    margin-top: 15px;
+    margin-top: 5px;
     font-size: 14px;
 }
 #footer_one .col_one .adresse{
 display: flex;
 align-items: center;
-margin-top: 15px;
+margin-top: 12px;
 }
 #footer_one .col_one .adresse .tc{
    font-size: 12px;
@@ -84,7 +86,7 @@ margin-top: 15px;
 }
 #footer_one .col_two .tc{
     text-decoration: none;
-    color: var(--grey_one);
+    color: var(--ggg);
     font-size:14px;
 }
 
@@ -94,11 +96,11 @@ margin-top: 15px;
     margin-top: 8px;
 }
 #footer_one .col_tree .tc_col{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 #footer_one .col_tree .tc{
     text-decoration: none;
-    color: var(--grey_one);
+    color: var(--ggg);
     font-size:14px;
 }
 #footer_one .col_four .titre{
@@ -109,15 +111,29 @@ margin-top: 15px;
 #footer_one .col_four .tc{
     color: var(--text-color-2);
     margin-top: 15px;
+    font-size: 14px;
 }
 #footer_one .col_four .card_input{
     background-color: rgb(255, 255, 255);
     padding: 10px;
     margin-top: 15px;
+    width: 100%;
+    display: flex;
+    gap: 5px;
 }
 
-#footer_one .col_four .card_input imput{
+#footer_one .col_four  input{
     border: none;
+    width: 100%;
+    
+}
+::placeholder{
+    color:var(--input_color);
+    font-size: 16px;
+}
+/* pour enlever le focus qui sur le input */
+textarea:focus, input:focus{
+    outline: none;
 }
 #footer_one .col_four .btn {
     
@@ -129,6 +145,7 @@ margin-top: 15px;
     margin-top: 15px;
     width: 100%;
     border: none;
+    color: white;
 }
 @media (max-width: 426px) {
   
